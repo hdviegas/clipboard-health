@@ -9,3 +9,6 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+For my solution suggestion, I started reordering the logic checks. Hence, the code runs specifically what's needed for every scenario, avoiding extra processing costs, beginning with the cheapest scenario, which was to check for the non-existence of the input.
+For the other scenarios, I grouped them to make the code more readable per scenario. I've also created some constants to make the maintenance of the code more manageable and leverage some small code reusability.
